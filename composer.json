@@ -1,0 +1,31 @@
+{
+  "name": "pronko/converge-payment-library",
+  "description": "Converge Elavon Payment Library",
+  "type": "metapackage",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pronko Consulting",
+      "homepage": "https://www.pronkoconsulting.com/"
+    }
+  ],
+  "minimum-stability": "alpha",
+  "require": {
+    "php": "~5.6.5|7.0.2|7.0.4|~7.0.6"
+  },
+  "replace": {
+    "pronko/converge-api": "self.version",
+    "pronko/converge-api-common": "self.version",
+    "pronko/converge-spi": "self.version",
+    "pronko/converge-spi-common": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pronko\\ConvergePaymentApi\\": "converge-api",
+      "Pronko\\ConvergePaymentApiCommon\\": "converge-api-common",
+      "Pronko\\ConvergePaymentSpi\\": "converge-spi",
+      "Pronko\\ConvergePaymentSpiCommon\\": "converge-spi-common"
+    }
+  }
+}

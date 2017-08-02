@@ -1,0 +1,21 @@
+{
+  "name": "pronko/converge-spi",
+  "description": "Pronko Consulting Payment SPI package",
+  "type": "library",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pronko Consulting",
+      "homepage": "https://www.pronkoconsulting.com/"
+    }
+  ],
+  "require": {
+    "php": "~5.6.0|7.0.2|7.0.4|~7.0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pronko\\ConvergePaymentSpi\\": ""
+    }
+  }
+}
