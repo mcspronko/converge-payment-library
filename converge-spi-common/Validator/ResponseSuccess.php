@@ -24,13 +24,20 @@ class ResponseSuccess implements ValidatorInterface
     public function validate(array $request, array $response)
     {
         $errorCode = null;
+        $errorMessage = '';
 
         if (isset($response['errorCode']) && $response['errorCode'] != 0) {
             $errorCode = $response['errorCode'];
+            $errorMessage = $response['errorMessage'];
+        }
+
+        if (isset($response['ssl_result']) && $response['ssl_result'] != 0) {
+            $errorCode = $response['ssl_result'];
+            $errorMessage = $response['ssl_result_message'];
         }
 
         if ($errorCode) {
-            throw new ValidationException($response['errorMessage'], $response['errorCode']);
+            throw new ValidationException($errorMessage, $errorCode);
         }
 
         return true;
