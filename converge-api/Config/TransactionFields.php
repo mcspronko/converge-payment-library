@@ -631,4 +631,11 @@ interface TransactionFields
      * @var string|null
      */
     const SSL_SERVER = 'ssl_server';
+
+    /**
+     * Test Mode. 'true' or 'false' values
+     *
+     * @var string
+     */
+    const SSL_TEST_MODE = 'ssl_test_mode';
 }

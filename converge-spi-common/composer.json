@@ -2,7 +2,7 @@
   "name": "pronko/converge-spi-common",
   "description": "Converge Payment SPI implementation package",
   "type": "library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "proprietary",
   "authors": [
     {
