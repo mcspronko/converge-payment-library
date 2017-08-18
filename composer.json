@@ -2,7 +2,7 @@
   "name": "pronko/converge-payment-library",
   "description": "Converge Elavon Payment Library",
   "type": "library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "proprietary",
   "authors": [
     {
